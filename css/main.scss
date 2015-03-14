@@ -52,12 +52,22 @@ $on-laptop:        800px;
 ;
 
 body{
-	text-align:justify;
-	background-image:url(../images/body-background.jpg);
+	text-align:justify;	
 }
 
 .site-header{
-	background-color:rgba(0,0,0,0.6);
+	background-color:black;
+	color: white !important;
+}
+
+.site-header a{
+	font-family: Ubuntu;
+}
+
+.site-header a:hover{
+	text-decoration:none;
+	color:grey;
+	transition-duration:0.5s;
 }
 
 .page-content{

@@ -56,8 +56,9 @@ body{
 }
 
 .navbar-inverse{
-	background-image: url(../images/solucoes.png);
+	background-image: url(../images/solucoes.png) !important;
 	border:0px !important;
+	background-color:#698ABF;
 }
 
 .page-content{

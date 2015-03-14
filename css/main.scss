@@ -55,20 +55,9 @@ body{
 	text-align:justify;	
 }
 
-.site-header{
-	background-color:black;
-	color: white !important;
-}
-
-.site-header a{
-	font-family: Ubuntu;
-	color: white !important;
-}
-
-.site-header a:hover{
-	text-decoration:none;
-	color:grey;
-	transition-duration:0.5s;
+.navbar-inverse{
+	background-image: url(../images/solucoes.png);
+	border:0px !important;
 }
 
 .page-content{

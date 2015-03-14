@@ -59,9 +59,22 @@ body{
 	background-image: url(../images/solucoes.png) !important;
 	border:0px !important;
 	background-color:#698ABF;
+	font-family:Ubuntu !important;
+	color: white !important;
+}
+
+.navbar-inverse a{
+	padding-bottom:10px;
+	border-bottom:1px solid rgba(0,0,0,0);
+}
+
+.navbar-inverse a:hover{
+	border-color:white;
+	transition-duration:0.5s;
 }
 
 .page-content{
-	padding:10px;
+	position:relative;
+	top:20px;
 	background-color:white;
 }

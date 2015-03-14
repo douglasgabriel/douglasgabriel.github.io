@@ -59,9 +59,12 @@ body{
 .navbar-inverse{
 	background-image: url(../images/solucoes.png) !important;
 	border:0px !important;
-	background-color:#698ABF;
-	font-family:Ubuntu !important;
+	background-color:#698ABF;	
 	color: white !important;
+}
+
+.navbar-inverse .navbar-brand{
+	font-family:Ubuntu !important;
 }
 
 .navbar-inverse a{

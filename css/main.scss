@@ -63,8 +63,9 @@ body{
 }
 
 .navbar-inverse .navbar-brand{
-	font-family: DS-DIGI !important;
+	font-family: Consolas !important;
 	font-weight: bold;
+	text-shadow: 0px 0px 10px black;
 }
 
 .navbar-inverse a{
@@ -73,13 +74,9 @@ body{
 	border-bottom:5px solid rgba(0,0,0,0);
 }
 
-.navbar-inverse a:hover{
+.navbar-inverse .navbarLink:hover{
 	border-color:white;
 	transition-duration:0.5s;
-}
-
-.navbar .container{
-	width:70% !important;
 }
 
 .page-content{

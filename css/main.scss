@@ -88,6 +88,10 @@ body{
 }
 
 .site-footer{
-	border-top:1px solid black;
-	background-color:rgba(0,0,0,0.1);
+	border-top:1px solid black;	
+}
+
+.site-footer .picture{
+	float:right;
+	border-radius:100%;
 }

@@ -3,6 +3,10 @@
 ---
 @charset "utf-8";
 
+@font-face{
+	font-family:"digital";
+	src: url("../font/DS-DIGI.TFF");
+}
 
 
 // Our variables
@@ -64,7 +68,8 @@ body{
 }
 
 .navbar-inverse .navbar-brand{
-	font-family:Ubuntu !important;
+	font-family: digital !important;
+	font-weight: bold;
 }
 
 .navbar-inverse a{

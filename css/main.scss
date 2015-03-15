@@ -92,12 +92,13 @@ body{
 	background-color:white;
 }
 
-.site-footer, .site-footer .wrapper, footer{
-	border-top:1px solid black !important;	
+.site-footer .wrapper{
+	padding:30px;
+	border-top:1px solid grey !important;	
 }
 
 .site-footer .picture{
-	float:right;	
-	border-radius:100px;
+	float:left;	
+	border-radius:1000px;
 	width:100px;
 }

@@ -41,6 +41,11 @@ $on-laptop:        800px;
     }
 }
 
+@media-query(max-width:800px){
+	.site-footer .picture{
+		margin:0 auto;
+	}
+}
 
 
 // Import partials from `sass_dir` (defaults to `_sass`)
@@ -87,7 +92,7 @@ body{
 	background-color:white;
 }
 
-.site-footer{
+.site-footer, .site-footer .wrapper, footer{
 	border-top:1px solid black !important;	
 }
 

@@ -60,12 +60,14 @@ body{
 	border:0px !important;
 	background-color:#698ABF;	
 	color: white !important;
+	box-shadow:0px 0px 10px black;
 }
 
 .navbar-inverse .navbar-brand{
 	font-family: Consolas !important;
 	font-weight: bold;
 	text-shadow: 0px 0px 10px black;
+	font-size:30px;
 }
 
 .navbar-inverse a{
@@ -83,4 +85,9 @@ body{
 	position:relative;
 	top:20px;
 	background-color:white;
+}
+
+.site-footer{
+	border-top:1px solid black;
+	background-color:rgba(0,0,0,0.1);
 }

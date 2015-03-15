@@ -41,9 +41,9 @@ $on-laptop:        800px;
     }
 }
 
-@media-query(max-width:800px){
-	.site-footer .picture{
-		margin:0 auto;
+@media-query(max-width:400px){
+	.footer-col{
+		width:100% !important;	
 	}
 }
 

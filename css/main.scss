@@ -42,8 +42,8 @@ $on-laptop:        800px;
 }
 
 @media-query(max-width:400px){
-	.footer-col{
-		width:100% !important;	
+	.footer-col-1{
+		display:block !important;
 	}
 }
 

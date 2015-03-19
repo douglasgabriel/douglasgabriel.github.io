@@ -22,7 +22,7 @@ Anteriormente, cursei o curso técnico em informática, também no IFPB - Campus
 - Pesquisas sobre Clusters Computacionais;
 - Ensino em programa de inclusão digital.
 
-Por fim, tenho, durante meus estudos, buscado me aperfeiçoar, principalmente na área da informática, atualmente com um foco bem maior no desenvolvimento de softwares, e neste blog pretendo fala das minhas experiências como aluno na área, bem como, pensamentos e acontecimentos que julgar relevantes.
+Por fim, tenho, durante meus estudos, buscado me aperfeiçoar, principalmente na área da informática, atualmente com um foco bem maior no desenvolvimento de softwares, e neste blog pretendo falar das minhas experiências como aluno na área, bem como, pensamentos e acontecimentos que julgar relevantes.
 
 Sem mais, até mais...   
 

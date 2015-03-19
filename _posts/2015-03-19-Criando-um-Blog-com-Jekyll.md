@@ -38,7 +38,7 @@ No Windows, você deve acessar [este site][rubyinstaller] e  baixar o instalador
 
 Execute o arquivo baixado e quando se deparar com esta tela, marque todas as checkboxes. 
 
-<img src="{{ site.absolute_url }}/images/rubyinstalation.png"> 
+<img src="{{ site.absolute_url }}/images/posts/rubyinstalation.png"> 
 
 com o Ruby instalado, agora será necessário instalar o Kit de Desenvolvimento, que encontra-se [no mesmo link][rubyinstaller]. Com o download realizado, descompacte o seu conteúdo dentro da pasta "devkit" dentro do diretório onde o Ruby foi instalado (se não houver esta pasta, crie).
 

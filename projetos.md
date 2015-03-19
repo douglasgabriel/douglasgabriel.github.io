@@ -13,6 +13,8 @@ permalink: /projetos/
 	<p>O sistema foi desenvolvido em Java, para plataforma Web, utilizando tecnologias como: HTML, CSS, Javascript, Bootstrap, Sevlets, JSP, JSTL, JDBC, Postgre SQL, Tomcat, entre outras.</p>
 	<a class="btn btn-default" href="https://github.com/douglasgabriel/ControleDeSalas">Repositório</a>
 	<a class="btn btn-default" href="../documentacao/alocadordesalas/">Documentação</a>
+	<br>
+	<br>
 </div>
 ---
 <div class="projeto">

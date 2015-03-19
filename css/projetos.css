@@ -1,4 +1,8 @@
-﻿img{
+﻿.projetos{
+    border-top: 1px solid #E9EAED !important;
+}
+
+img{
     width:300px;
     float:left;
     margin:10px;

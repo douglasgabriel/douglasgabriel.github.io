@@ -131,7 +131,7 @@ header a{
 	border-radius: 5px;
 }
 
-.card-content .card-title{
-	text-align: left;
+.card .card-title{
+	text-align: left !important;
 	color:black !important;
 }

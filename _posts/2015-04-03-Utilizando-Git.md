@@ -4,7 +4,7 @@ title:  "Utilizando GIT"
 date:   2015-04-03 12:37:42
 author: Douglas Gabriel
 categories: jekyll update
-image: "{{ site.absolute_url }}/images/post-git.png"
+image: "/images/post-git.png"
 ---
 
 Saudações,

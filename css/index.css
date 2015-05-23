@@ -135,3 +135,7 @@ header a{
 	text-align: left !important;
 	color:black !important;
 }
+
+.wrapper{
+	width:100% !important;
+}

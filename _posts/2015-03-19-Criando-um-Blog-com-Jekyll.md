@@ -3,7 +3,7 @@ layout: post
 title:  "Criando um Blog com Jekyll"
 date:   2015-03-19 14:29:42
 categories: jekyll update
-image:/images/jekyll-post.jpg
+image: /images/jekyll-post.jpg
 ---
 
 Saudações,

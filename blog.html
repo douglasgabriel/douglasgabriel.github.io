@@ -5,20 +5,18 @@ layout: default
 <div class="home">  
 
   <h4 class="page-heading">Posts</h4>
-   <div class="row post-list">
+  <div class="row post-list">
     {% for post in site.posts %}
 
     <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">
-      <div class="col s12 m6 l3">
+      <div class="col s12 m6 l6">
         <div class="card small">
           <div class="card-image">
             <img src="{{post.image}}">
             <span class="card-title">{{ post.title }}</span>
           </div>
-          <div class="card-content">            
-            <div class="card-action">
-              <span class="post-meta">{{ post.date | date: "%b, %-d, %Y" }}</span>
-            </div>
+          <div class="card-content">                        
+            <span class="post-meta">{{ post.date | date: "%b, %-d, %Y" }}</span>          
           </div>
         </div>
       </div>
@@ -26,6 +24,6 @@ layout: default
     {% endfor %}
   </div>
 
-<p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
 
 </div>

@@ -130,3 +130,7 @@ header a{
 	color:white;
 	border-radius: 5px;
 }
+
+.card-content{
+	color:black !important;
+}

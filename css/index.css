@@ -136,6 +136,6 @@ header a{
 	color:black !important;
 }
 
-.wrapper{
+.wrapper, .home{
 	width:100% !important;
 }

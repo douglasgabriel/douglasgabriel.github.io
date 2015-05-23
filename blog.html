@@ -22,6 +22,22 @@ layout: default
       </div>
     </a>       
     {% endfor %}
+    {% for post in site.posts %}
+
+    <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">
+      <div class="col s12 m6 l6">
+        <div class="card small">
+          <div class="card-image">
+            <img src="{{post.image}}">            
+          </div>
+          <div class="card-content">  
+            <span class="card-title">{{ post.title }}</span>                      
+            <span class="post-meta">{{ post.date | date: "%b, %-d, %Y" }}</span>          
+          </div>
+        </div>
+      </div>
+    </a>       
+    {% endfor %}
   </div>
 
   <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>

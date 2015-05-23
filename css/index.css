@@ -139,3 +139,7 @@ header a{
 .wrapper, .home{
 	width:100% !important;
 }
+
+.home{
+	text-align: center !important;
+}

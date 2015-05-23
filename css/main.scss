@@ -61,32 +61,6 @@ body{
 	font-size:19px !important;
 }
 
-.navbar-inverse{
-	background-image: url(../images/solucoes.png) !important;
-	border:0px !important;
-	background-color:#698ABF;	
-	color: white !important;
-	box-shadow:0px 0px 10px black;
-}
-
-.navbar-inverse .navbar-brand{
-	font-family: Consolas !important;
-	font-weight: bold;
-	text-shadow: 0px 0px 10px black;
-	font-size:30px;
-}
-
-.navbar-inverse a{
-	color: white !important;
-	padding-bottom:10px;
-	border-bottom:5px solid rgba(0,0,0,0);
-}
-
-.navbar-inverse .navbarLink:hover{
-	border-color:white;
-	transition-duration:0.5s;
-}
-
 .page-content{
 	position:relative;
 	top:20px;

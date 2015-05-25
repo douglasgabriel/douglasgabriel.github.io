@@ -20,7 +20,12 @@ body{
 	text-align: center;
 	position: relative;
 	bottom: 35px;
+	margin:0 auto;
 }
+
+.conteiner {
+	width:100% !important;
+} 
 
 header{
 	background-image: url(../images/overlay.png);

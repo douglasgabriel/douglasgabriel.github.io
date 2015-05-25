@@ -19,9 +19,8 @@ body{
 #goToBlog{
 	text-align: center;
 	position: relative;
-	bottom: 200px;
-	margin:0 auto;
-	display:block;
+	bottom: 100px;
+	margin:0 auto;	
 }
 
 .conteiner {
@@ -59,6 +58,8 @@ header a{
 }
 
 #about{
+	position:relative;
+	bottom:300px;
 	text-align: center;
 	background-color: white;
 }

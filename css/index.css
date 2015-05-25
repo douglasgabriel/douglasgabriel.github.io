@@ -19,7 +19,7 @@ body{
 #goToBlog{
 	text-align: center;
 	position: relative;
-	bottom: 100px;
+	bottom: 50px;
 	margin:0 auto;	
 }
 
@@ -59,7 +59,7 @@ header a{
 
 #about{
 	position:relative;
-	bottom:100px;
+	bottom:150px;
 	text-align: center;
 	background-color: white;
 }

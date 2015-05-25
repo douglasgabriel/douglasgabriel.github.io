@@ -19,8 +19,9 @@ body{
 #goToBlog{
 	text-align: center;
 	position: relative;
-	bottom: 35px;
+	bottom: 200px;
 	margin:0 auto;
+	display:block;
 }
 
 .conteiner {

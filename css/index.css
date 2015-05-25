@@ -16,6 +16,12 @@ body{
 	font-size: 17px;
 }
 
+#goToBlog{
+	text-align: center;
+	position: relative;
+	bottom: 35px;
+}
+
 header{
 	background-image: url(../images/overlay.png);
 	width:100%;

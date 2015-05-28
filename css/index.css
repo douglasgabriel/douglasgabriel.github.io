@@ -76,31 +76,33 @@ header a{
 
 #about .links a{
 	margin:10px;
-	margin-top:20px;
-	background-color: rgba(0,0,0,0) !important;
+	margin-top:20px;	
 }
 
 #about .links a:hover{
 	transition-duration:0.5s;
 }
 
-#facebook{
-	background: url(../images/facebook.png) center;
+#facebook{	
+	background: url(../images/facebook.png) center no-repeat !important;	
+	background-color: black !important;
 }
-#facebook:hover{
-	background: url(../images/facebook-color.png) center;	
+#facebook:hover{	
+	background-color: #46629E !important;
 }
 #linkedin{
-	background: url(../images/linkedin.png) center;
+	background: url(../images/linkedin.png) center no-repeat !important;	
+	background-color: black !important;
 }
 #linkedin:hover{
-	background: url(../images/linkedin-color.png) center;	
+	background-color: #1A84BC !important;
 }
 #github{
-	background: url(../images/github.png) center;
+	background: url(../images/github.png) center no-repeat !important;	
+	background-color: black !important;
 }
 #github:hover{
-	background: url(../images/github-color.png) center;	
+	background-color: gray !important;
 }
 
 .btn-floating{

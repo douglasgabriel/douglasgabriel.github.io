@@ -1,5 +1,5 @@
 # Site settings
-title: douglas_gabriel
+title: Douglas Gabriel
 email: douglasxgabriel@gmail.com
 description: > # this means to ignore newlines until "baseurl:"  
 baseurl: "" # the subpath of your site, e.g. /blog/

@@ -30,4 +30,6 @@ Assim, foi o encerramento de um dia perfeito com vários aprendizados e contatos
 
 <img src="{{ site.absolute_url }}/images/posts/maddog2.jpg">
 
-Continua...
+[Continua...][continuacao]
+
+[continuacao]:http://douglasgabriel.github.io/jekyll/update/2015/06/02/Expotec-day-2.html

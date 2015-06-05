@@ -63,6 +63,12 @@ header a{
 	background-color: white;
 }
 
+#about img{
+	width: 150px;	
+	border-radius: 100%;
+	box-shadow: 0px 0px 10px grey;
+}
+
 .title:hover{
 	box-shadow: 0px 0px 10px black !important;	
 	transition-duration:0.5s;

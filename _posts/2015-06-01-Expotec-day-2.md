@@ -28,4 +28,4 @@ Porém, neste dia iniciou-se o Game Jam, competição para o desenvolvimento rel
 [day1]:http://douglasgabriel.github.io/jekyll/update/2015/06/01/Expotec-day-1.html
 [jump]:https://www.google.com/get/cardboard/jump/
 [jumptecmundo]:http://www.tecmundo.com.br/google-i-o-2015/80727-primeiros-videos-usando-tecnologia-jump-youtube-incriveis.htm
-[continuacao]:http://douglasgabriel.github.io/jekyll/update/2015/06/06/Expotec-day-6.html
+[continuacao]:http://douglasgabriel.github.io/jekyll/update/2015/06/06/Expotec-day-3.html

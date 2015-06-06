@@ -23,8 +23,9 @@ Posteriormente, iria rolar uma transmissão ao vivo do Google I/O Extended, even
 
 Nem tudo foram flores neste dia, pois o hackaton que estávamos tão empolgados em participar não contava com informações claras, o que fez pensarmos que o evento já havia começado semanas antes, além de não ter ficado claro a quantidade de pessoas na equipe e entre outras coisas, decidimos então não participar mais.
 
-Porém, neste dia iniciou-se o Game Jam, competição para o desenvolvimento relâmpago de um jogo com temática sugerida. Então, já que não participaríamos mais do hackaton, decidimos participar desta competição, mas, sobre ela contarei no próximo post, aguardem...
+Porém, neste dia iniciou-se o Game Jam, competição para o desenvolvimento relâmpago de um jogo com temática sugerida. Então, já que não participaríamos mais do hackaton, decidimos participar desta competição, mas, sobre ela contarei no [próximo post][continuacao]...
 
 [day1]:http://douglasgabriel.github.io/jekyll/update/2015/06/01/Expotec-day-1.html
 [jump]:https://www.google.com/get/cardboard/jump/
 [jumptecmundo]:http://www.tecmundo.com.br/google-i-o-2015/80727-primeiros-videos-usando-tecnologia-jump-youtube-incriveis.htm
+[continuacao]:http://douglasgabriel.github.io/jekyll/update/2015/06/06/Expotec-day-6.html

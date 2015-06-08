@@ -8,15 +8,15 @@ layout: default
   <div class="row post-list">
     {% for post in site.posts %}
 
-    <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">
+    <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">    
       <div class="col s12 m6 l3">
+      <span class="post-meta">{{ post.date | date: "%b, %-d, %Y" }}</span>          
         <div class="card small">
           <div class="card-image">
             <img src="{{post.image}}">            
           </div>
           <div class="card-content">  
-            <span class="card-title">{{ post.title }}</span>                      
-            <span class="post-meta">{{ post.date | date: "%b, %-d, %Y" }}</span>          
+            <span class="card-title">{{ post.title }}</span>                                  
           </div>
         </div>
       </div>

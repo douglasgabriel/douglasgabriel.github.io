@@ -48,7 +48,6 @@ $on-laptop:        800px;
 *{
   margin:0px;
   padding:0px;
-  overflow-x: hidden;
 }
 body{
   background-color: #e9eaed !important;
@@ -176,9 +175,21 @@ footer .social{
 .post-header{
   background-repeat: no-repeat !important;
   background-size: cover !important;
-  background-position: center;
+  background-position: center !important;
 }
 .social > *:hover{
+  color:white;
+}
+.back-home {
+  position:fixed;
+  right:5px;
+  bottom: 5px;
+  font-size: 40px;
+  padding:0px 10px;
+  background-color: black;
+  border-radius: 5px;
+}
+.back-home:hover{
   color:white;
 }
 @media (max-width:700px){

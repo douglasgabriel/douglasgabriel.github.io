@@ -17,10 +17,12 @@
 
           <article class="post-content">
             {{ content }}
+            <a href="/" class="back-home z-depth-1" title="voltar para página principal"><i class="mdi mdi-home"></i></a>
           </article>
 
         </div>
       </div>
+      {% include comments.html %}
     </div>
 
     {% include footer.html %}

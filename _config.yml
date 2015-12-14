@@ -9,6 +9,7 @@ url: "http://douglasgabriel.github.io" # the base hostname & protocol for your s
 twitter_username: douglasxgabrie1
 github_username:  douglasgabriel
 image_posts_default: /img/background-header.jpg
+key_words: blog, thinks, development, pensamentos, desenvolvimento
 
 # Build settings
 markdown: kramdown

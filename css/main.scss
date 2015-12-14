@@ -1,0 +1,195 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@charset "utf-8";
+
+
+
+// Our variables
+$base-font-family: Helvetica, Arial, sans-serif;
+$base-font-size:   16px;
+$small-font-size:  $base-font-size * 0.875;
+$base-line-height: 1.5;
+
+$spacing-unit:     30px;
+
+$text-color:       #111;
+$background-color: #fdfdfd;
+$brand-color:      #2a7ae2;
+
+$grey-color:       #828282;
+$grey-color-light: lighten($grey-color, 40%);
+$grey-color-dark:  darken($grey-color, 25%);
+
+// Width of the content area
+$content-width:    800px;
+
+$on-palm:          600px;
+$grid-small:       661px;
+$on-laptop:        800px;
+
+// Using media queries with like this:
+// @include media-query($on-palm) {
+//     .wrapper {
+//         padding-right: $spacing-unit / 2;
+//         padding-left: $spacing-unit / 2;
+//     }
+// }
+@mixin media-query($device) {
+    @media screen and (max-width: $device) {
+        @content;
+    }
+}
+@mixin responsive-centralize($width){
+  @media (max-width: $width){
+    text-align: center;
+  }
+}
+*{
+  margin:0px;
+  padding:0px;
+  overflow-x: hidden;
+}
+body{
+  background-color: #e9eaed !important;
+}
+.text-shadow-1{
+  text-shadow: 1px 1px 1px black;
+}
+.text-shadow-2{
+  text-shadow: 1px 1px 5px black;
+}
+.social{
+  text-align: center;
+  background: black;
+  color:grey;
+  font-size: 25px;
+  box-shadow: 1px 1px 5px grey;
+  padding:5px;
+}
+.social > *{
+  margin:5px;
+}
+.wrapper{
+  width: 100%;
+  margin:0px;
+  max-width:100% !important;
+}
+.page-content .wrapper{
+  padding:0px;
+  width:70%;
+  margin:0 auto;
+}
+header .wrapper{
+  background:url('../img/overlay.png'), url('../img/background-header.jpg') center;
+  background-size: auto, cover;
+  margin:0px !important;
+  min-height: 300px;
+}
+header .author{
+  @include responsive-centralize($grid-small);
+  color:white;
+}
+header .author a{
+  color:white;
+  font-weight: bold;
+}
+header .author img{
+  border-radius: 100%;
+  border:5px solid white;
+  box-shadow: 1px 1px 5px black;
+  max-width: 120px
+}
+.cover{
+  height: 100% !important;
+  min-height: 200px;
+  background-size: cover;
+  background-position: center;
+}
+.bar{
+  padding:5px;
+  background-color: #131415;
+  box-shadow: -1px -1px 5px black;
+}
+.grid__item{
+  background-color: white;
+  margin:10px;
+  padding:0px !important;
+  width:90%;
+  margin:0 auto;
+  border-radius: 3px;
+}
+.grid__item p{
+  font-size: 17px;
+}
+.grid__item hr.separator{
+  border:1px solid #e9eaed !important;
+  margin:5px 0px;
+  width:100%;
+}
+.grid__item:hover{
+  box-shadow: 1px 1px 20px grey;
+  transition-duration: 0.5s;
+}
+.grid{
+  width: 100%;
+}
+.meta{
+  padding:15px;
+}
+.grid__item hr{
+  border:2px solid black;
+  width:30px;
+}
+.grid__item.code hr{
+  border-color:green;
+}
+.post-link{
+  color:black !important;
+}
+.meta .date{
+  font-weight: normal;
+  font-size: 15px;
+}
+.post{
+  background-color:white;
+  padding:20px;
+  border-radius:3px;
+}
+footer{
+  background-color: #191a1b;
+  padding-bottom: 50px !important;
+}
+footer h2{
+  color:white;
+  border-bottom:1px solid black;
+  margin:0px;
+  padding-bottom: 10px;
+}
+footer .social{
+  background-color: #191a1b;
+  box-shadow: none;
+}
+.post-header .wrapper{
+  background:none;
+}
+.post-header{
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  background-position: center;
+}
+.social > *:hover{
+  color:white;
+}
+@media (max-width:700px){
+  .page-content .wrapper{
+    width:90%;
+  }
+}
+
+// Import partials from `sass_dir` (defaults to `_sass`)
+@import
+        "base",
+        "layout",
+        "syntax-highlighting"
+;

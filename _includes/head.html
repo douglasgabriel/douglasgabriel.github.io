@@ -23,7 +23,7 @@
   <meta name="keywords" content="{% if page.keywords %}{{ page.keywords }}{% else %}{{ site.keywords }}{% endif %}" />
   <link rel="canonical" href="{{ site.absolute_url }}{{ page.url }}" />
   <meta property="og:locale" content="pt_BR" />
-  <meta property="og:type" content="{{ page.layout }}" />
+  <meta property="og:type" content="website" />
   <meta property="og:title" content="{{ page.title }}" />
   <meta property="og:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}" />
   <meta property="og:url" content="{{ site.absolute_url }}{{ page.url }}" />
@@ -34,7 +34,7 @@
   <meta name="twitter:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}"/>
   <meta name="twitter:title" content="{{ page.title }}"/>
   <meta name="twitter:domain" content="{{ site.title }}"/>
-  <meta name="twitter:image:src" content="{{site.url}}/{% if page.image %}{{ page.image }}{% else %}{{ site.image_posts_default }}{% endif %}"/>
+  <meta name="twitter:image:src" content="{{site.url}}{% if page.image %}{{ page.image }}{% else %}{{ site.image_posts_default }}{% endif %}"/>
 
   <link rel="icon" href="/img/favicon.png">
   <meta name="msapplication-TileColor" content="#212121">

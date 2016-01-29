@@ -8,6 +8,10 @@ image: /img/posts/social-meta-tags.png
 keywords: tutorial, dica
 description: Neste post é possível ver como melhorar a integração dos seus sites com as mídias sociais através de meta tags html
 featured: true
+category: tutorial
+slider: true
+index: true
+categoryslider: true
 ---
 
 Saudações, pessoal

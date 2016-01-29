@@ -20,6 +20,13 @@ body{
 .post > a:hover{
 	text-decoration: none;
 }
+.post .title{
+	font-weight: bold;
+}
+.category .btn{
+	width:100%;
+	color:white;
+}
 .cover{
 	width:100%;
 	height:150px;
@@ -27,8 +34,7 @@ body{
 	background-position: center;
 }
 .link-info{
-	padding:10px;
-	height:200px !important;	
+	padding:10px;	
 	overflow: auto;
 }
 .link-info > *{

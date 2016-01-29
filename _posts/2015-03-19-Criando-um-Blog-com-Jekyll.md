@@ -8,6 +8,10 @@ image: /img/posts/jekyll-post.png
 description: Jekyll é uma ferramenta escrita em Ruby e tem a intenção de oferecer simplicidade e praticidade na criação de blogs.
 keywords: tutorial
 featured: true
+category: tutorial
+slider: true
+index: true
+categoryslider: true
 ---
 
 Saudações,

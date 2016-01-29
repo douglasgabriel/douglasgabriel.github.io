@@ -7,7 +7,11 @@ categories: jekyll update
 image: "/img/posts/post-git.png"
 description: Basicamente, Git é uma ferramenta de controle de versão distribuída, além de um sistema de gerenciamento de código-fonte bastante utilizada. Este tutorial básico ensinará os conceitos básicos e os primeiros passos na ferramenta. 
 keywords: tutorial
+category: tutorial
 featured: true
+slider: true
+index: true
+categoryslider: true
 ---
 
 Saudações,

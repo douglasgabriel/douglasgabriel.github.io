@@ -7,6 +7,8 @@
 
     {% include header.html %}
 
+    {% include slider.html %}
+
     <div class="page-content">
       <div class="wrapper">
         {{ content }}
@@ -14,6 +16,15 @@
     </div>
 
     {% include footer.html %}
+
+  <script src="/js/jQuery-2.1.4.min.js"></script>
+  <script src="/js/materialize.min.js"></script>
+  <script>
+  $(".button-collapse").sideNav();
+  $('.slider').slider({
+    interval:20000
+  });
+  </script>
 
   </body>
 

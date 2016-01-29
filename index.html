@@ -2,59 +2,37 @@
 layout: default
 ---
 
-<div class="home">
+<div class="home">  
 
-  <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-  <!-- header -->
-  <ins class="adsbygoogle"
-       style="display:inline-block;width:728px;height:90px"
-       data-ad-client="ca-pub-5408692415712463"
-       data-ad-slot="9340246836"></ins>
-  <script>
-  (adsbygoogle = window.adsbygoogle || []).push({});
-  </script>
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- desenvolvedores-inicio -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-5408692415712463"
+     data-ad-slot="3012350431"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
-  <div class="bar">
-		<div class="filter">
-			<span class="filter__label">Filtro: </span>
-			<button class="action filter__item filter__item--selected" data-filter="*">Todos</button>
-			<button class="action filter__item" data-filter=".code"><i class="icon mdi mdi-code-braces"></i><span class="action__text">Desenvolvimento</span></button>
-			<!-- <button class="action filter__item" data-filter=".event"><i class="icon mdi mdi-tag-faces"></i><span class="action__text">Eventos</span></button> -->
-		</div>
-		<button class="cart">
-		</button>
-	</div>
-	<!-- Main view -->
-	<div class="view">
-
-		<!-- Grid -->
-		<section class="grid grid--loading">
-			<!-- Loader -->
-			<img class="grid__loader" src="images/grid.svg" width="60" alt="Loader image" />
-			<!-- Grid sizer for a fluid Isotope (Masonry) layout -->
-			<div class="grid__sizer"></div>
-			<!-- Grid items -->
-      {% for post in site.posts %}
-      <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">
-      <div class="grid__item {{ post.category }} z-depth-1 row">
-				<div class="cover col l4 s12 m6" style="background-image:url('{{ post.image }}')">
-				</div>
-				<div class="meta col m6 l8 s12">
-          <hr>
-					<h3 class="meta__title">{{ post.title }}</h3>
-					<span class="meta__brand date">{{ post.date | date: "%b %-d, %Y" }}</span>
-          <hr class="separator">
-          <p>{{ post.abstract }}</p>
-				</div>
-				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
-			</div>
+  <ul class="post-list row">
+    {% for post in site.posts %}    
+    <li class="col l4 m6 s12 post ">   
+      <a target="_blank" class="post-link z-depth-1" href="{% if post.layout %}{{ post.url }}{% else %}{{ post.link }}{% endif %}">           
+        <div class="cover" style="background-image:url('{{ post.image }}')"></div>
+        <div class="link-info">          
+          <h6>
+            {{ post.title }}
+          </h6>                  
+          <p class="post-meta">{{ post.description | truncate: 300 }}</p>
+        </div>
+        <div class="link-footer">
+          <span class="post-meta"><b>Categoria: </b>{{ post.keywords }}</span><br>
+          <span class="post-meta"><b>Autor: </b>{{ post.author }}</span>
+        </div>
       </a>
-      {% endfor %}
-		</section>
-		<!-- /grid-->
-	</div>
-	<!-- /view -->
-	<script src="js/isotope.pkgd.min.js"></script>
-	<script src="js/flickity.pkgd.min.js"></script>
-	<script src="js/main.js"></script>
+    </li>
+    {% endfor %}          
+  </ul>  
+
 </div>

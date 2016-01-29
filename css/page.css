@@ -1,0 +1,28 @@
+.post-header{
+	min-height:200px;
+	background-size: cover;
+	background-position: center;
+	color:white;
+	text-align: center;
+}
+.post-header.post{
+	min-height:400px;
+	padding: 100px 0px;
+}
+.post-header .post-title{
+	padding-top: 70px;
+}
+.post-title, .post-subtitle{
+	text-shadow:1px 1px 1px black;
+}
+.page-content.post, .post .post-content{
+	width:70%;
+	margin:0 auto;
+	background-color: white;
+	padding:20px;
+}
+@media (max-width: 700px){
+	.page-content.post,.post .post-content{
+		width:97%;	
+	}	
+}

@@ -1,51 +1,42 @@
 <head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<meta property="og:image:type" content="image/png">
-	<meta property="og:image:width" content="693">
-	<meta property="og:image:height" content="436">
+  <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+  <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="{{ "/css/materialize.min.css" | prepend: site.baseurl }}">
+  <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
+  <link rel="stylesheet" href="{{ "/css/index.css" | prepend: site.baseurl }}">
+  <link rel="stylesheet" href="{{ "/css/header.css" | prepend: site.baseurl }}">
+  <link rel="stylesheet" href="{{ "/css/slider.css" | prepend: site.baseurl }}">
+  <link rel="stylesheet" href="{{ "/css/page.css" | prepend: site.baseurl }}">
+  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+  <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" />
 
-	<meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}" />
-	<meta name="keywords" content="{% if page.key_words %}{{ page.key_words }}{% else %}{{ site.key_words }}{% endif %}" />
-	<link rel="canonical" href="{{ site.absolute_url }}{{ page.url }}" />
-	<meta property="og:locale" content="pt_BR" />
-	<meta property="og:type" content="{{ page.layout }}" />
-	<meta property="og:title" content="{{ page.title }}" />
-	<meta property="og:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}" />
-	<meta property="og:url" content="{{ site.absolute_url }}{{ page.url }}" />
-	<meta property="og:site_name" content="{{ site.title }}" />
-	<meta property="article:published_time" content="{{ page.date }}" />
-	<meta property="og:image" content="{{site.url}}/{% if page.image %}{{ page.image }}{% else %}{{ site.image_posts_default }}{% endif %}" />
-	<meta name="twitter:card" content="summary"/>
-	<meta name="twitter:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}"/>
-	<meta name="twitter:title" content="{{ page.title }}"/>
-	<meta name="twitter:domain" content="{{ site.title }}"/>
-	<meta name="twitter:image:src" content="{{site.url}}/{% if page.image %}{{ page.image }}{% else %}{{ site.image_posts_default }}{% endif %}"/>
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="693">
+  <meta property="og:image:height" content="436">
 
-	<title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+  <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}" />
+  <meta name="keywords" content="{% if page.keywords %}{{ page.keywords }}{% else %}{{ site.keywords }}{% endif %}" />
+  <link rel="canonical" href="{{ site.absolute_url }}{{ page.url }}" />
+  <meta property="og:locale" content="pt_BR" />
+  <meta property="og:type" content="{{ page.layout }}" />
+  <meta property="og:title" content="{{ page.title }}" />
+  <meta property="og:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}" />
+  <meta property="og:url" content="{{ site.absolute_url }}{{ page.url }}" />
+  <meta property="og:site_name" content="{{ site.title }}" />
+  <meta property="article:published_time" content="{{ page.date }}" />
+  <meta property="og:image" content="{{site.url}}/{% if page.image %}{{ page.image }}{% else %}{{ site.image_posts_default }}{% endif %}" />
+  <meta name="twitter:card" content="summary"/>
+  <meta name="twitter:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}"/>
+  <meta name="twitter:title" content="{{ page.title }}"/>
+  <meta name="twitter:domain" content="{{ site.title }}"/>
+  <meta name="twitter:image:src" content="{{site.url}}/{% if page.image %}{{ page.image }}{% else %}{{ site.image_posts_default }}{% endif %}"/>
 
-	<link rel="stylesheet" href="{{ "/css/demo.css" | prepend: site.baseurl }}">
-	<!-- Flickity gallery styles -->
-	<link rel="stylesheet" href="{{ "/css/flickity.css" | prepend: site.baseurl }}">
-	<!-- Component styles -->
-	<link rel="stylesheet" href="{{ "/css/component.css" | prepend: site.baseurl }}">
-
-	<script src="js/modernizr.custom.js"></script>
-	<link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
-	<link rel="stylesheet" href="{{ "/css/materialize.min.css" | prepend: site.baseurl }}">
-	<link rel="stylesheet" href="{{ "/css/materialdesignicons.min.css" | prepend: site.baseurl }}">
-	<link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
-	<link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" />
-	<script>
-		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-		ga('create', 'UA-71809768-1', 'auto');
-		ga('send', 'pageview');
-
-	</script>
+  <link rel="icon" href="/img/favicon.png">
+  <meta name="msapplication-TileColor" content="#212121">
+  <meta name="theme-color" content="#212121">
 </head>

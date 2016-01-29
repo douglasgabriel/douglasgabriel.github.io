@@ -1,32 +1,29 @@
 <!DOCTYPE html>
 <html>
 
-  {% include head.html %}
-  <body>
+{% include head.html %}
 
-    {% include header_post.html %}
+<body>
 
-    <div class="page-content">
-      <div class="wrapper">
-        <div class="post z-depth-1">
+	{% include header.html %}    
+	<header class="post-header post" style="background-image:url('{{ page.image }}')">
+		<h1 class="post-title">{{ page.title }}</h1>
+		<p class="post-subtitle">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
+	</header>
+	<div class="post">  
 
-          <header class="post-header">
-            <h1 class="post-title">{{ page.title }}</h1>
-            <p class="post-meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
-          </header>
+		<article class="post-content z-depth-1">
+			{{ content }}
+		</article>
+	</div>
+	{% include footer.html %}  
 
-          <article class="post-content">
-            {{ content }}
-            <a href="/" class="back-home z-depth-1" title="voltar para página principal"><i class="mdi mdi-home"></i></a>
-          </article>
+	<script src="/js/jQuery-2.1.4.min.js"></script>
+	<script src="/js/materialize.min.js"></script>
+	<script>
+		$(".button-collapse").sideNav();  
+	</script>
 
-        </div>
-        <br>
-        {% include comments.html %}
-      </div>
-    </div>
+</body>
 
-    {% include footer.html %}
-
-  </body>
 </html>

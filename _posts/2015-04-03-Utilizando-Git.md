@@ -4,8 +4,10 @@ title:  "Utilizando GIT"
 date:   2015-04-03 12:37:42
 author: Douglas Gabriel
 categories: jekyll update
-image: "/images/post-git.png"
-category: code
+image: "/img/posts/post-git.png"
+description: Basicamente, Git é uma ferramenta de controle de versão distribuída, além de um sistema de gerenciamento de código-fonte bastante utilizada. Este tutorial básico ensinará os conceitos básicos e os primeiros passos na ferramenta. 
+keywords: tutorial
+featured: true
 ---
 
 Saudações,
@@ -24,7 +26,7 @@ Ao fim deste post você deverá:
 
 ###O que é Git?###
 
-Basicamente, Git é uma ferramenta de controle de versão distribuída, além de um sistema de gerenciamento de código fonte, desenvolvido por [Linus Torvalds][Linus], para auxiliar no desenvolvimento do Kernel Linux, mas acabou sendo adotado por muitos outros projetos.
+Basicamente, Git é uma ferramenta de controle de versão distribuída, além de um sistema de gerenciamento de código-fonte, desenvolvido por [Linus Torvalds][Linus], para auxiliar no desenvolvimento do Kernel Linux, mas acabou sendo adotado por muitos outros projetos.
 
 Na prática, o Git trabalha com um sistema de repositórios, onde cada repositório contém um projeto que será monitorado, tendo todo o seu histórico de modificações gravado, permitindo, assim, o controle das suas versões.
 
@@ -78,11 +80,11 @@ Com o login realizado, vamos agora criar o repositório que iremos trabalhar:
 
 No GitHub:
 
-<img src="{{ site.absolute_url }}/images/posts/criarrepositoriogithub.png">
+<img src="/img/posts/criarrepositoriogithub.png">
 
 No Bitbucket:
 
-<img src="{{ site.absolute_url }}/images/posts/criarrepositoriobitbucket.png">
+<img src="/img/posts/criarrepositoriobitbucket.png">
 
 Ao clicar na opção, preencha o formulário com as informações do seu repositório e ao confirmar, a criação do seu repositório remoto estará concluída!
 
@@ -96,11 +98,11 @@ A url do seu repositório pode ser encontrada:
 
 No GitHub:
 
-<img src="{{ site.absolute_url }}/images/posts/urlgithub.png">
+<img src="/img/posts/urlgithub.png">
 
 No Bitbuket:
 
-<img src="{{ site.absolute_url }}/images/posts/urlbitbucket.png">
+<img src="/img/posts/urlbitbucket.png">
 
 > Este comando irá criar um diretório com  mesmo nome do repositório clonado dentro do diretório que o terminal está atualmente.
 

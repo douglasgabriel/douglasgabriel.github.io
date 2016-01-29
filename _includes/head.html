@@ -29,7 +29,7 @@
   <meta property="og:url" content="{{ site.absolute_url }}{{ page.url }}" />
   <meta property="og:site_name" content="{{ site.title }}" />
   <meta property="article:published_time" content="{{ page.date }}" />
-  <meta property="og:image" content="{{site.url}}/{% if page.image %}{{ page.image }}{% else %}{{ site.image_posts_default }}{% endif %}" />
+  <meta property="og:image" content="{{site.url}}{% if page.image %}{{ page.image }}{% else %}{{ site.image_posts_default }}{% endif %}" />
   <meta name="twitter:card" content="summary"/>
   <meta name="twitter:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}"/>
   <meta name="twitter:title" content="{{ page.title }}"/>

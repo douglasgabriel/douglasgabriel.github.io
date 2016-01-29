@@ -3,10 +3,10 @@ title: Desenvolvedores
 email:
 description: Dicas, tutoriais, opiniões e compartilhamento de conhecimento para desenvolvedores
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://yourdomain.com" # the base hostname & protocol for your site
+url: "http://douglasgabriel.github.io" # the base hostname & protocol for your site
 twitter_username: jekyllrb
 github_username:  jekyll
-image_posts_default: img/HNCK4530.jpg
+image_posts_default: /img/HNCK4530.jpg
 
 # Build settings
 markdown: kramdown

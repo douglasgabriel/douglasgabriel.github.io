@@ -12,7 +12,7 @@
       {% for post in site.posts %}
       {% if post.slider and page.category == 'all' %}            
       <li>
-      <a target="_blank" href="{{ post.link }}">
+      <a target="_blank" href="{% if post.layout %}{{ post.url }}{% else %}{{ post.link }}{% endif %}">
         <img src="{{ post.image }}">
         <div class="caption left-align">
           <h3>{{ post.title }}</h3>

@@ -5,28 +5,9 @@ category: all
 
 <div class="home">  
 
-  <ul class="post-list row">
-  <div class="col l4 s12 red-text category">
-    <h5>Notícias</h5>
-    {% for post in site.posts %}   
-    {% if post.category == 'opinião' and post.index %}
-    <li class="post ">   
-      <a target="_blank" class="post-link z-depth-1" href="{% if post.layout %}{{ post.url }}{% else %}{{ post.link }}{% endif %}">           
-        <div class="cover" style="background-image:url('{{ post.image }}')"></div>
-        <div class="link-info">          
-          <h6 class="title red-text">
-            {{ post.title }}
-          </h6>                  
-          <p class="post-meta">{{ post.description | truncate: 300 }}</p>
-        </div>        
-      </a>
-    </li>
-    {% endif %}
-    {% endfor %}
-    <!--<a class="waves-effect waves-light btn red">Ver mais</a>-->
-  </div>
-  <div class="col l4 s12 category">
-    <a href="/categorias/dicas.html" class="green-text"><h5>Dicas</h5></a>
+  <ul class="post-list row">    
+  <div class="col l6 s12 category">
+    <a href="/categorias/dicas.html" class="green-text"><h5>Dicas e opiniões</h5></a>
     {% for post in site.posts %}   
     {% if post.category == 'dica' and post.index %}
     <li class="post ">   
@@ -44,7 +25,7 @@ category: all
     {% endfor %}
     <a href="/categorias/dicas.html" class="waves-effect waves-light btn green">Ver mais</a>
   </div>
-  <div class="col l4 s12  category">
+  <div class="col l6 s12  category">
     <a href="/categorias/tutoriais.html" class="teal-text"><h5>Tutoriais</h5></a>
     {% for post in site.posts %}   
     {% if post.category == 'tutorial' and post.index %}

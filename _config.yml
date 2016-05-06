@@ -1,12 +1,12 @@
 # Site settings
-title: Desenvolvedores
+title: Douglas Gabriel
 email:
-description: Dicas, tutoriais, opiniões e compartilhamento de conhecimento para desenvolvedores
+description: Dicas, tutoriais, opiniões e compartilhamento de conhecimento
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://douglasgabriel.github.io" # the base hostname & protocol for your site
 twitter_username: jekyllrb
 github_username:  jekyll
-image_posts_default: /img/site-img.png
+image_posts_default: /img/me.jpg
 
 # Build settings
 markdown: kramdown

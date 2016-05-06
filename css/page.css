@@ -15,14 +15,16 @@
 .post-title, .post-subtitle{
 	text-shadow:1px 1px 1px black;
 }
+.post-content{
+	margin:30px auto;
+}
 .page-content.post, .post .post-content{
 	width:70%;
-	margin:0 auto;
 	background-color: white;
 	padding:20px;
 }
 @media (max-width: 700px){
 	.page-content.post,.post .post-content{
-		width:97%;	
-	}	
+		width:97%;
+	}
 }

@@ -61,7 +61,11 @@ Com a ferramenta já instalada na sua máquina, com o terminal, navegue até a p
 
 Fornecendo suas credenciais, termine a operação.
 
-Feito isto, o proximo passo é o seguinte comando:
+Feito isto, o proximo passo é o seguinte comando tornar a pasta do projeto gerenciada pelo git com o comando:
+
+```git init```
+
+E assim, criar uma aplicação Heroku com o seguinte comando:
 
 ```heroku apps:create <nome-da-sua-aplicacao>```
 

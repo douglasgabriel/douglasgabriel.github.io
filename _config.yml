@@ -1,7 +1,7 @@
 # Site settings
 title: Douglas Gabriel
 email:
-description: Dicas, tutoriais, opiniões e compartilhamento de conhecimento
+description: Desenvolvedor Full-Stack, com especialidade em aplicações Java e tecnologias Web
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://douglasgabriel.github.io" # the base hostname & protocol for your site
 twitter_username: jekyllrb

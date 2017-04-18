@@ -1,110 +1,23 @@
 ---
+layout: default
 ---
-<html>
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
-  <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+<div class="home">
 
-  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
-  <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" />
+  <h1 class="page-heading">Posts</h1>
 
-  <meta property="og:image:type" content="image/png">
-  <meta property="og:image:width" content="693">
-  <meta property="og:image:height" content="436">
+  <ul class="post-list">
+    {% for post in site.posts %}
+      <li>
+        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
 
-  <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}" />
-  <meta name="keywords" content="{% if page.keywords %}{{ page.keywords }}{% else %}{{ site.keywords }}{% endif %}" />
-  <link rel="canonical" href="{{ site.absolute_url }}{{ page.url }}" />
-  <meta property="og:locale" content="pt_BR" />
-  <meta property="og:type" content="website" />
-  <meta property="og:title" content="{{ page.title }}" />
-  <meta property="og:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}" />
-  <meta property="og:url" content="{{ site.url }}{{ page.url }}" />
-  <meta property="og:site_name" content="{{ site.title }}" />
-  <meta property="article:published_time" content="{{ page.date }}" />
-  <meta property="og:image" content="{{site.url}}{% if page.image %}{{ page.image }}{% else %}{{ site.image_posts_default }}{% endif %}" />
-  <meta name="twitter:card" content="summary"/>
-  <meta name="twitter:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}"/>
-  <meta name="twitter:title" content="{{ page.title }}"/>
-  <meta name="twitter:domain" content="{{ site.title }}"/>
-  <meta name="twitter:image:src" content="{{site.url}}{% if page.image %}{{ page.image }}{% else %}{{ site.image_posts_default }}{% endif %}"/>
-
-  <link rel="icon" href="/img/favicon.png">
-  <meta name="msapplication-TileColor" content="#212121">
-  <meta name="theme-color" content="#212121">
-
-  <!-- <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-ga('create', 'UA-71809768-1', 'auto');
-ga('send', 'pageview');
-
-</script> -->
-
-
-<link rel="stylesheet" href="css/materialize.min.css" />
-<link rel="stylesheet" href="css/index.css" />
-<link rel="stylesheet" href="css/materialdesignicons.min.css">
-</head>
-<body>
-
-  <div class="menu row white">
-    <i class="mdi mdi-close close hide"></i>
-    <i class="mdi mdi-chevron-down page-scroll hide"></i>
-    {% for page in site.pages %}
-    {% if page.title and page.title != '' %}
-    <div class="col m3 page">
-      <div class="cover">
-        <div class="image" style="background-image:url('{{page.image}}')">
-        </div>
-        <i class="mdi mdi-{{ page.icon }}"></i>
-        <p>
-          {{ page.title }}
-        </p>
-        <small>{{ page.subtitle }}</small>
-      </div>
-      <div class="content hide">
-        {{ page.content }}
-      </div>
-    </div>
-    {% endif %}
+        <h2>
+          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        </h2>
+      </li>
     {% endfor %}
-  </div>
+  </ul>
 
-  <script type="text/javascript" src="js/jQuery-2.1.4.min.js"></script>
-  <script type="text/javascript" src="js/materialize.min.js"></script>
-  <script>
-  $(".close").on('click', function (){
-    $(".active").addClass("col page").removeClass("active");
-    $(".menu").find(".page").css("display", "block");
-    $(".close").addClass("hide");
-    $(".page-scroll").addClass("hide");
-    $(".menu").css("overflow-y", "hidden");
-    $(".content").addClass("hide");
-  })
-  $(".page").on('click', select);
-  function select (){
-    $(this).removeClass("col page").addClass("active");
-    $(".menu").find(".page").css("display", "none");
-    $(".close").removeClass("hide");
-    $(".page-scroll").removeClass("hide");
-    $(".menu").css("overflow-y", "auto");
-    $(".content").removeClass("hide");
-  }
-  $(".page-scroll").click(function() {
-    $(".menu").animate(
-      {
-        scrollTop: $(".active .cover").height()
-      }, 1000);
-      return false;
-    });
-    </script>
-  </body>
-  </html>
+  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+
+</div>

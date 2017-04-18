@@ -1,0 +1,53 @@
+$size-header-photo: 250px;
+$half-size-header-photo: $size-header-photo / 2;
+
+.site-header{    
+    .header-photo{        
+        width: $size-header-photo;
+        height: $size-header-photo;
+        float:left;
+        background:{
+            size:cover;
+            position:center;
+        }
+    }
+    .header-content{
+        background-color: $blue-grey-darken-4;
+        margin-left:$size-header-photo;        
+        height: $size-header-photo;
+        .header-content-top{            
+            width: 100%;
+            height: $half-size-header-photo;
+            color:$white;
+            text-align: center;
+            .left{
+                background-color: $blue-darken-4;
+                h1{
+                    font-weight: 600;
+                }
+            }       
+            .right{
+                background-color: $blue-darken-3;                                
+                p{
+                    font-size: 15px;
+                }
+            }     
+        }
+        .header-content-bottom{
+            .menu{
+                a{                  
+                    color:$white;  
+                    float: left;
+                    height: $half-size-header-photo;
+                    i{
+                        font-size: 35px;
+                    }
+                    &:hover{
+                        background-color: rgba(0,0,0,0.5);
+                        text-decoration: none;
+                    }
+                }
+            }
+        }        
+    }
+}

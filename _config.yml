@@ -1,12 +1,16 @@
 # Site settings
 title: Douglas Gabriel
-email:
-description: Desenvolvedor Full-Stack, com especialidade em aplicações Java e tecnologias Web
+subtitle: Desenvolvedor Full-Stack
+subtitle-detail: 
+photo: site-photo.jpg
+email: douglasxgabriel@gmail.com
+description: > # this means to ignore newlines until "baseurl:"
+  Write an awesome description for your new site here. You can edit this
+  line in _config.yml. It will appear in your document head meta (for
+  Google search results) and in your feed.xml site description.
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://douglasgabriel.github.io" # the base hostname & protocol for your site
-twitter_username: jekyllrb
-github_username:  jekyll
-image_posts_default: /img/me.jpg
+github_username:  douglasgabriel
 
 # Build settings
 markdown: kramdown

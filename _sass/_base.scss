@@ -1,6 +1,9 @@
 @import
-"helpers/colors"
+"helpers/values"
+,"helpers/colors"
 ,"components/header"
+,"components/curriculum"
+,"components/shareds"
 ;
 
 @font-face {
@@ -254,4 +257,13 @@ pre {
     align-items: center;
     justify-content: center;
     text-align: center;
+}
+.justify{
+    text-align: justify;
+}
+.text-center{
+    text-align: center;
+}
+.bold{
+    font-weight: bold;
 }

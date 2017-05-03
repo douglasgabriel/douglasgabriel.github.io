@@ -2,22 +2,27 @@
 layout: default
 ---
 
-<div class="home">
+<div class="page-content">
+    <div class="wrapper">
 
-  <h1 class="page-heading">Posts</h1>
+        <h1>Bem-Vindo!</h1>
+        <p class="justify">
+            <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem obcaecati libero, assumenda praesentium facere architecto temporibus et quibusdam impedit laborum vel. Architecto animi ratione impedit quidem quasi veniam ipsam neque?</span>
+            <span>Saepe neque praesentium nihil sunt rem fuga, necessitatibus libero accusamus illum facere nostrum. Rerum labore quo incidunt, expedita consequatur soluta ipsa amet pariatur commodi ea perferendis illum temporibus ad molestiae.</span>
+            <span>Corrupti cumque obcaecati, aspernatur id corporis soluta voluptatibus architecto incidunt dicta vero doloribus vel dolores possimus laborum voluptatem minus et placeat, provident. Aliquid nam eius hic, aperiam odit aspernatur nesciunt.</span>
+        </p>
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+    </div>
+</div>
+<div class="page-content blue-grey-lighten-5">
+    <div class="wrapper">
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
+        <h1>Bem-Vindo!</h1>
+        <p class="justify">
+            <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem obcaecati libero, assumenda praesentium facere architecto temporibus et quibusdam impedit laborum vel. Architecto animi ratione impedit quidem quasi veniam ipsam neque?</span>
+            <span>Saepe neque praesentium nihil sunt rem fuga, necessitatibus libero accusamus illum facere nostrum. Rerum labore quo incidunt, expedita consequatur soluta ipsa amet pariatur commodi ea perferendis illum temporibus ad molestiae.</span>
+            <span>Corrupti cumque obcaecati, aspernatur id corporis soluta voluptatibus architecto incidunt dicta vero doloribus vel dolores possimus laborum voluptatem minus et placeat, provident. Aliquid nam eius hic, aperiam odit aspernatur nesciunt.</span>
+        </p>
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
+    </div>
 </div>

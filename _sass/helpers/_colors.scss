@@ -1,4 +1,15 @@
-$blue-darken-4: #0d47a1;
-$blue-darken-3: #1565c0;
-$blue-grey-darken-4:#263238;
-$white: white;
+@each $color, $value in $colors {
+  .#{$color} {
+    background-color: $value;
+  }
+  .text-#{$color} {
+    color : $value !important;
+    a {
+      color : $value !important;
+    }
+  }
+  .border-bottom-#{$color}{
+    border-bottom: 1px solid $value;
+    padding-bottom: 10px;
+  }
+}

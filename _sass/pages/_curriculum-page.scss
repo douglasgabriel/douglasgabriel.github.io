@@ -1,0 +1,47 @@
+#curriculum-page{
+    section{
+        padding:20px;
+    }    
+    .cover{
+        text-align: center;
+        .circle-image-wrapper{
+            margin-bottom: 20px;
+        }        
+        a{
+            text-decoration: none;
+        }
+    }
+    .skills{
+        .circle-image-wrapper{
+            margin-bottom:20px;
+        }
+    }
+    .experience{
+        .content{
+            max-width: 1000px;
+            margin:0 auto;
+            .title .position{
+                color:grey;
+                font-weight: normal;
+            }
+            .info{
+                color:grey;
+                font-weight: normal;
+                font-style: italic;
+            }
+            .technologies{
+                .title{
+                    color:grey;
+                }
+                .tech{
+                    background-color: map-get($colors , blue-lighter );
+                    padding:5px;
+                    border-radius: 5px;
+                    color:white;
+                    margin-bottom:10px;
+                    display: inline-block;
+                }
+            }
+        }
+    }
+}

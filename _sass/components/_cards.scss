@@ -1,0 +1,45 @@
+.dgg-card{
+    &.dgg-rounded-borders{
+        border-radius: 5px;
+    }
+    .dgg-card-cover{
+        padding:20px;
+        min-height: 300px;
+        background : {
+            size : cover;
+            position : center;
+            repeat : no-repeat;
+        }
+        .content{
+            z-index: 1;  
+            .dgg-card-description{
+                opacity: 0;
+            }
+        }        
+        &:hover{
+            background : {
+                position : left;
+            }
+            transition: $transition-slower;
+            .dgg-card-description{
+                opacity: 1;                
+                transition: $transition-slower;
+            }
+        }
+
+        @each $colorName, $color in $colors{
+            &.overlay-#{$colorName}{
+                position:relative;
+                &:before{
+                    content:'';
+                    @include match-parent;
+                    @include linear-gradient(45deg, $color, transparent);
+                }   
+                &:hover:before{
+                    @include linear-gradient(45deg, darken($color, 10%), transparent);
+                }   
+            }
+        }
+
+    }
+}

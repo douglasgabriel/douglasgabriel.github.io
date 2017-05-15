@@ -1,0 +1,160 @@
+.dgg-navbar{    
+    .col{
+        padding:0;
+    }
+    height: 110px;
+    
+    a{
+        display: inline-block;
+        width: 100%;
+        padding:0px;
+        color:white !important;
+    }
+
+    &.full-screen{
+        height: 100%;
+        .dgg-menu{
+            .dgg-link{              
+                background: {
+                    size: auto 120%;
+                    position:center;
+                }       
+                transition: all $transition-normal ease-in-out;
+                &:hover{
+                    background-size: auto 100%;
+                    position: relative;
+                }
+                .dgg-link-icon{
+                    font-size:$menu-fullscreen-icon-font-size;
+                    padding:20px 30px;
+                }
+                .dgg-link-title{
+                    font-size: $menu-fullscreen-title-font-size;
+                    line-height: 56px;
+                }
+            }
+        }
+    }    
+
+    .dgg-menu{
+        margin:0px;
+        .dgg-link{
+            width: 100%;
+            height: 100%;
+            position: relative;
+            cursor: pointer;
+            padding:20px;
+
+            p{
+                margin:0px;
+            }
+
+            .dgg-link-icon{
+                font-size:$menu-icon-font-size;
+                background-color: map-get($colors , transparent-lighter);
+                border-radius: 50%;
+                display: inline-block;                               
+                position: relative; 
+                padding:10px 15px;
+                &:before{
+                    content:'';
+                    position: absolute;                    
+                    top:50;
+                    bottom:50;
+                    left:50;
+                    right: 50;  
+                    border-radius: 50%;
+                    background-color: map-get($colors , transparent-lighter);
+                    display: inline-block;
+                }                   
+            }
+            .dgg-link-title{
+                text-transform: uppercase;
+                font-weight: bold;
+                font-size: $menu-title-font-size;
+                line-height: 0px;
+                margin-top: 25px;
+            }
+            .dgg-link-subtitle{
+                font-style: italic;
+                font-size: $menu-subtitle-font-size;
+                opacity: 0;
+                height: 100px;
+                display: inline-block;
+                line-height: 20px;
+            }
+
+            &:before{
+                content:'';
+                position:absolute;
+                top:0;
+                bottom:0;
+                left:0;
+                right: 0;
+                background-color: map-get($colors , overlay-darker);
+                opacity: $menu-link-overlay-opacity;
+            }
+
+            &:hover, &.active{
+                &:before{
+                    opacity: $menu-link-overlay-opacity-hover;
+                    transition-duration: $transition-slower;
+                }
+                .dgg-link-icon:before{
+                    top:-10;
+                    bottom:-10;
+                    left:-10;
+                    right: -10;                  
+                    transition-duration: $transition-faster;
+                    z-index: -1;                    
+                }
+                .dgg-link-subtitle{
+                    opacity: 1;
+                    transition-duration: $transition-slower;
+                }
+            }
+        }
+
+    }
+
+    @media screen and (max-width: $menu-fullscreen-responsive){
+        &.full-screen{
+            .dgg-menu{
+                .col.m3{
+                    width: 100%;
+                    height: 25%;
+                }
+                .dgg-link{  
+                    background: {
+                        size: cover;
+                        position:center;
+                        repeat: no-repeat;
+                    }  
+                    &:hover{
+                        background-size: 110% auto;
+                        position: relative;
+                    }
+                    .dgg-link-icon{
+                        font-size: $menu-icon-font-size-responsive;
+                        padding:10px 15px;
+                    }
+                    .dgg-link-title{
+                        font-size: $menu-title-font-size-responsive;
+                        margin-top: 0;
+                    }
+                    .dgg-link-subtitle{
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+    @media screen and (max-width: $menu-responsive){
+        .dgg-link{
+            .dgg-link-title{
+                display: none;
+            }
+        }
+    }
+
+}

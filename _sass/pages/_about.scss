@@ -1,0 +1,50 @@
+#about-page{
+
+    .introduce{
+        background : {
+            image : url($profile-image);
+            repeat: no-repeat;
+            color : map-get($colors , blue-lighter);
+            position: right;
+            size: auto 100%;
+        }
+        .content{
+            padding: 40px;
+            padding-right: 500px;            
+            .circle-image-wrapper{
+                width: 150px;
+                margin:0 auto;
+                display: none;
+                margin-bottom: 20px;
+            }
+        }
+
+        @media screen and (max-width: $about-page-responsive){
+            &{
+                background: {
+                    image : none !important;
+                }
+            }
+            .content{
+                padding-right: 40px;
+                .circle-image-wrapper{
+                    display: block;
+                }
+            }
+        }
+    }
+    .details{
+        padding-top:50px;        
+        .detail{
+            margin-bottom: 250px;
+            text-align: justify;
+            i{
+                font-size: 50px;
+            }
+            .title{
+                text-transform: uppercase;
+            }
+        }
+    }
+
+}

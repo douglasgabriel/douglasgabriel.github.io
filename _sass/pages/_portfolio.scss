@@ -1,0 +1,26 @@
+#portfolio-page{
+    .resume{
+        text-align: center;
+        .circle-image-wrapper{
+            width: 100px;
+            height: 100px;
+            line-height: 100px;
+            margin: 20px 0px;
+            padding-top:22px;
+        }
+    }
+    .systems{
+        z-index: -1;
+    }
+    .dgg-card{
+        .dgg-card-cover{
+        height: 300px;
+
+        }
+    }
+    .collaborations{
+        .collaboration{
+            height: 200px;
+        }
+    }
+}

@@ -1,0 +1,30 @@
+---
+layout: portfolio
+subtitle: Meus projetos
+icon: ion-ios-briefcase-outline
+image: /img/portfolio.JPG
+description:
+---
+
+<div class="my-grey row">
+  <div class="portfolio-wrapper">
+    {% for post in site.posts %}
+    {% if post.category == "portfolio" %}
+    {% if post.link %}
+    <a href="{{ post.link }}" target="_blank">
+      {% endif %}
+      <div class="col l4 m6 s12 all-center">
+        <div class="portfolio-item white-text z-depth-1 all-center text-center" style="background-image:url('{{post.image}}')">
+          <div class="portfolio-overlay all-center">
+          </div>
+          <h5 class="title">{{ post.title }}</h5>
+          <h6 class="subtitle">{{ post.description }}</h6>
+        </div>
+      </div>
+      {% if post.link %}
+    </a>
+    {% endif %}
+    {% endif %}
+    {% endfor %}
+  </div>
+</div>

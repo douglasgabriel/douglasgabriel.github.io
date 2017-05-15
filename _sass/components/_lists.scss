@@ -1,0 +1,24 @@
+.dgg-list{
+    .dgg-items{
+        border-left: 3px dotted map-get($colors , blue-lighter );
+        padding-left: $dgg-list-pad;        
+        padding-top: $dgg-list-pad;
+        padding-bottom: $dgg-list-pad;
+        .dgg-item{
+            position: relative;
+            margin-bottom: 30px;
+            border-bottom:1px solid map-get($colors , muted);
+            &:before{
+                content:'';
+                position: absolute;
+                width: 25px;
+                height: 25px;
+                border: 4px solid map-get($colors , blue-lighter);
+                border-radius: 50%;
+                background-color: white;
+                left: -$dgg-list-pad - 13.5px;                
+                top:5px;                
+            }
+        }
+    }
+}

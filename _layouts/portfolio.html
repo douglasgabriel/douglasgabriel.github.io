@@ -1,0 +1,110 @@
+<html>
+
+    {% include head.html %}
+
+    <body>
+        
+        {% include header.html %}
+
+		<main>            
+			
+            <article id="portfolio-page">
+
+                <section class="resume z-depth-2">
+
+                    <div class="content grey lighten-4">
+
+                        <div class="row">
+
+                            <div class="col m3 s6">
+                                <div class="circle-image-wrapper z-depth-1">
+                                    <h3 class="bold">7</h3>
+                                </div>
+                                <h5>Projetos</h5>
+                            </div>
+                            <div class="col m3 s6">
+                                <div class="circle-image-wrapper z-depth-1">
+                                    <h3 class="bold">3</h3>
+                                </div>
+                                <h5>Projetos individuais</h5>
+                            </div>
+                            <div class="col m3 s6">
+                                <div class="circle-image-wrapper z-depth-1">
+                                    <h3 class="bold">1</h3>
+                                </div>
+                                <h5>Minicurso</h5>
+                            </div>
+                            <div class="col m3 s6">
+                                <div class="circle-image-wrapper z-depth-1">
+                                    <h3 class="bold">4</h3>
+                                </div>
+                                <h5>Posts</h5>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+                <section class="systems row no-margin">
+
+                    {% for post in site.posts %}
+                        {% if post.category == "portfolio" %}                            
+                                
+                                <div class="dgg-card col m3 no-pad">
+                                    
+                                    <div class="dgg-card-cover overlay-overlay-darker dgg-align-chdr-center" style="background-image:url('{{ post.image }}')">
+
+                                        <div class="content white-text text-center">
+                                            <h5 class="dgg-card-title bold">{{ post.title }}</h5>
+                                            <div class="dgg-card-description">
+                                                <p class=" ">{{ post.description }}</p>
+                                                {% if post.link %}
+                                                    <a href="{{ post.link }}" target="_blank" class="btn white-text">Visualizar</a>
+                                                {% endif %}
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                            
+                        {% endif %}
+                    {% endfor %}
+
+                </section>
+
+                <section class="collaborations text-center z-depth-2">
+
+                    <div class="content">
+                        <h5>Colaborações</h5>
+
+                        <div class="row">
+                            <div class="col m3 s6 dgg-align-chdr-center collaboration">
+                                <img src="/img/portfolio/caixa.png" alt="" width="150">
+                            </div>
+                            <div class="col m3 s6 dgg-align-chdr-center collaboration">
+                                <img src="/img/portfolio/usebens.jpg" alt="" width="150">
+                            </div>
+                            <div class="col m3 s6 dgg-align-chdr-center collaboration">
+                                <img src="/img/portfolio/correios.png" alt="" width="150">
+                            </div>
+                            <div class="col m3 s6 dgg-align-chdr-center collaboration">
+                                <img src="/img/portfolio/iescolar.png" alt="" width="150">
+                            </div>
+                        </div>
+
+                    </div>
+
+                </section>
+
+            </article>
+
+		</main>
+
+		{% include footer.html %}
+
+    </body>
+
+</html>

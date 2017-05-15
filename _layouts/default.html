@@ -1,41 +1,11 @@
-<!DOCTYPE html>
 <html>
 
-{% include head.html %}
+    {% include head.html %}
 
-<body>
+    <body>
+        
+        {% include main-header.html %}        
 
-  {% include header.html %}    
-
-  {% include slider.html %}
-
-  <div class="page-content">
-    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-    <!-- desenvolvedores-inicio -->
-    <ins class="adsbygoogle"
-    style="display:block"
-    data-ad-client="ca-pub-5408692415712463"
-    data-ad-slot="3012350431"
-    data-ad-format="auto"></ins>
-    <script>
-      (adsbygoogle = window.adsbygoogle || []).push({});
-    </script>
-    <div class="wrapper">
-      {{ content }}
-    </div>
-  </div>
-
-  {% include footer.html %}
-
-  <script src="/js/jQuery-2.1.4.min.js"></script>
-  <script src="/js/materialize.min.js"></script>
-  <script>
-    $(".button-collapse").sideNav();
-    $('.slider').slider({
-      interval:20000
-    });
-  </script>
-
-</body>
+    </body>
 
 </html>

@@ -1,3 +1,55 @@
+@import
+"helpers/values"
+,"helpers/mixins"
+,"helpers/positions"
+,"helpers/shareds"
+,"components/navbar"
+,"components/jumbotron"
+,"components/footer"
+,"components/images-containers"
+,"components/text-containers"
+,"components/lists"
+,"components/cards"
+,"pages/about"
+,"pages/curriculum-page"
+,"pages/portfolio"
+,"pages/blog"
+;
+
+@font-face {
+  font-family: 'Avenir Next';
+  src: url('https://code.ionicframework.com/assets/fonts/avenir-next/demi.eot');
+  src: url('https://code.ionicframework.com/assets/fonts/avenir-next/demi.eot?#iefix') format('embedded-opentype'),
+  url('https://code.ionicframework.com/assets/fonts/avenir-next/demi.woff2') format('woff2'),
+  url('https://code.ionicframework.com/assets/fonts/avenir-next/demi.woff') format('woff'),
+  url('https://code.ionicframework.com/assets/fonts/avenir-next/demi.ttf') format('truetype');
+  font-weight: 600;
+}
+@font-face {
+  font-family: 'Avenir Next';
+  src: url('https://code.ionicframework.com/assets/fonts/avenir-next/medium.eot');
+  src: url('https://code.ionicframework.com/assets/fonts/avenir-next/medium.eot?#iefix') format('embedded-opentype'),
+  url('https://code.ionicframework.com/assets/fonts/avenir-next/medium.woff') format('woff'),
+  url('https://code.ionicframework.com/assets/fonts/avenir-next/medium.ttf') format('truetype');
+  font-weight: 500;
+}
+@font-face {
+  font-family: 'Avenir Next';
+  src: url('https://code.ionicframework.com/assets/fonts/avenir-next/regular.eot');
+  src: url('https://code.ionicframework.com/assets/fonts/avenir-next/regular.eot?#iefix') format('embedded-opentype'),
+  url('https://code.ionicframework.com/assets/fonts/avenir-next/regular.woff') format('woff'),
+  url('https://code.ionicframework.com/assets/fonts/avenir-next/regular.ttf') format('truetype');
+  font-weight: 400;
+}
+
+*{
+  font-family : 'Avenir Next' !important;    
+}
+
+.content{
+    color:map-get($colors, text-default);
+}
+
 /**
  * Reset some basic elements
  */
@@ -201,4 +253,8 @@ pre {
             fill: $grey-color;
         }
     }
+}
+
+a{
+    text-decoration: none !important;
 }

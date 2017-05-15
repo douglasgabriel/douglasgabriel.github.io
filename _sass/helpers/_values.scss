@@ -1,0 +1,45 @@
+// Images begin
+$profile-image : '/img/about-jumbotron.jpg';
+// Images end
+
+// Colors begin
+$colors : (
+  overlay-darker : #101524,
+  transparent-lighter: rgba(255,255,255,0.2),
+  blue-lighter: #8EBABB,
+  muted : #E9EBEE,
+  text-default : #26292E
+);
+// Colors end
+
+// Menu values begin
+$menu-fullscreen-title-font-size : 20px;
+$menu-title-font-size-responsive: 15px;
+$menu-title-font-size: 15px;
+
+$menu-subtitle-font-size : 15px;
+
+$menu-fullscreen-icon-font-size : 50px;
+$menu-icon-font-size-responsive : 20px;
+$menu-icon-font-size: 20px;
+
+$menu-link-overlay-opacity: 0.5;
+$menu-link-overlay-opacity-hover: 0.2;
+
+$menu-fullscreen-responsive: 700px;
+$menu-responsive: 400px;
+// Menu values end
+
+// List component values begin
+$dgg-list-pad: 30px;
+// List component values end
+
+// Trasitions times begin
+$transition-slower : 1s;
+$transition-normal : 0.5s;
+$transition-faster : 0.2s;
+// Trasitions times end
+
+// Pages begin
+$about-page-responsive: 873px;
+// Pages end

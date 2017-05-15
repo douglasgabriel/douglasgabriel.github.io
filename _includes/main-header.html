@@ -1,0 +1,38 @@
+<header>
+
+    <nav class="dgg-navbar full-screen">
+
+        <ul class="dgg-menu row">
+
+            {% for page in site.html_pages %}
+            {% if page.title and page.title != '' %}
+                <div class="col m3">
+                    <a href="{{ page.url }}">
+                        <li class="dgg-link dgg-align-chdr-center" style="background-image:url('{{page.image}}')">
+
+                            <div class="dgg-pos-over text-center">
+
+                                <div class="dgg-link-icon">
+                                    <i class="{{ page.icon }}"></i>
+                                </div>
+                                <p class="dgg-link-title">
+                                    {{ page.title }}
+                                </p>
+                                <small class="dgg-link-subtitle">
+                                    {{ page.subtitle }}
+                                </small>
+
+                            </div>
+
+                        </li>
+                    </a>
+                </div>
+
+            {% endif %}
+            {% endfor %}
+
+        </ul>
+
+    </nav>
+
+</header>

@@ -1,0 +1,78 @@
+<html>
+
+    {% include head.html %}
+
+    <body>
+        
+        {% include header.html %}
+
+		<main>            
+			
+            <article id="blog-page" class="blue-grey lighten-5">
+
+                <section class="jumbotron text-center dgg-align-chdr-center" style="background-image:url('/img/blog.jpg')">
+                    
+                    <div class="content white-text">
+
+                        <h5>Analista de sistemas e das coisas da vida.</h5>
+
+                    </div>
+                    
+                </section>
+
+                <section>
+
+                    <div class="content row">
+
+                        {% for post in site.posts %}
+                            {% if post.category != "portfolio" %}
+
+                            <div class="col m6">
+
+                                <a href="{{ post.url }}" class="post">
+                                    
+                                    <div class="dgg-card no-pad z-depth-1">
+                                    
+                                        <div class="dgg-card-cover overlay-overlay-darker" style="background-image:url('{{ post.image }}')">
+
+                                            <div class="content white-text">
+                                                <h5 class="dgg-card-title">{{ post.title }}</h5>                                                
+                                                <small>{{ post.date | date: '%B %d, %Y'}}</small>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="dgg-card-body white">
+
+                                            <div class="content">
+
+                                                <p>
+                                                    {{ post.description }}
+                                                </p>
+
+                                            </div>
+
+                                        </div>  
+
+                                    </div>
+
+
+                                </a>
+
+                            </div>
+                            {% endif %}
+                        {% endfor %}
+
+                    </div>
+
+                </section>
+
+            </article>
+
+		</main>
+
+		{% include footer.html %}
+
+    </body>
+
+</html>

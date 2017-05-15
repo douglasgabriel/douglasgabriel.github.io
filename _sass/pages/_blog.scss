@@ -1,0 +1,26 @@
+#blog-page{
+
+    .jumbotron{
+    
+        font-style: italic;
+
+    }
+
+    .content{
+        margin: 0px;
+    }
+
+    .dgg-card{
+        margin:10px;
+        .dgg-card-cover{
+            min-height: 200px;
+            .content{
+                position: absolute;
+                bottom: 0px;
+                left: 0px;
+                right: 0px;
+            }
+        }
+    }
+
+}

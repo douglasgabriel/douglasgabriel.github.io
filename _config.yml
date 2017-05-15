@@ -1,11 +1,11 @@
 # Site settings
 title: Douglas Gabriel
-email:
+email: douglasxgabriel@gmail.com
 description: Desenvolvedor Full-Stack, com especialidade em aplicações Java e tecnologias Web
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://douglasgabriel.github.io" # the base hostname & protocol for your site
-twitter_username: jekyllrb
-github_username:  jekyll
+github_username:  douglasgabriel
+linkedin_username:  douglasggouveia
 image_posts_default: /img/me.jpg
 
 # Build settings

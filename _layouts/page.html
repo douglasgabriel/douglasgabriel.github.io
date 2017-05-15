@@ -1,30 +1,17 @@
-<!DOCTYPE html>
 <html>
 
-{% include head.html %}
+    {% include head.html %}
 
-<body>
+    <body>
+        
+        {% include header.html %}
 
-	{% include header.html %}    
+		<main>            
+			{{ page.content }}
+		</main>
 
-	<header class="post-header" style="background-image:url('{% if page.image %} {{ page.image }} {% else %} {{ site.image_posts_default }}{% endif %}')">
-		<h1 class="post-title">{{ page.title }}</h1>
-		<h6 class="post-subtitle">{{ page.description }}</h6>
-	</header>
-	<div class="page-content post">
-		<div class="wrapper">
-			{{ content }}
-		</div>
-	</div>
+		{% include footer.html %}
 
-	{% include footer.html %}
-
-	<script src="/js/jQuery-2.1.4.min.js"></script>
-	<script src="/js/materialize.min.js"></script>
-	<script>
-		$(".button-collapse").sideNav();  
-	</script>
-
-</body>
+    </body>
 
 </html>

@@ -1,16 +1,39 @@
-<nav class=" blue-grey darken-4">
-	<div class="nav-wrapper">
-		<a href="/" class="brand-logo"><img src="/img/logo-dev.png" alt="logo"></a>
-		<a href="#" data-activates="mobile-demo" class="button-collapse"><i class="fa fa-bars"></i></a>
-		<ul class="right hide-on-med-and-down links">
-		{% for page in site.html_pages %}
-			<li><a href="{{ page.url }}">{{ page.title }}</a></li>
-			{% endfor %}			
-		</ul>
-		<ul class="side-nav" id="mobile-demo">
-		{% for page in site.html_pages %}
-			<li><a href="{{ page.url }}">{{ page.title }}</a></li>
-			{% endfor %}			
-		</ul>
-	</div>
-</nav>
+<header>
+
+    <nav class="dgg-navbar blue-grey darken-3">
+
+        <ul class="dgg-menu row">
+
+            {% for pg in site.pages %}
+            {% if pg.title and pg.title != '' %}
+                <div class="col s3">
+                    <a href="{{ pg.url }}">
+                        {% if pg.url == page.url %}
+                        <li class="dgg-link dgg-align-chdr-center active">                        
+                        {% else %}
+                        <li class="dgg-link dgg-align-chdr-center">
+                        {% endif %}
+
+                            <div class="dgg-pos-over text-center">
+
+                                <div class="dgg-link-icon">
+                                    <i class="{{ pg.icon }}"></i>
+                                </div>
+                                <p class="dgg-link-title">
+                                    {{ pg.title }}
+                                </p>                            
+
+                            </div>
+
+                        </li>
+                    </a>
+                </div>
+
+            {% endif %}
+            {% endfor %}
+
+        </ul>
+
+    </nav>
+
+</header>

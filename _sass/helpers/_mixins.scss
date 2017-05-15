@@ -1,0 +1,35 @@
+@mixin align-chdr-center(){
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin match-parent(){
+    position: absolute;
+    top:0;
+    bottom:0;
+    right:0;
+    left:0;
+}
+
+@mixin linear-gradient($direction, $color-stops...) {
+    /* para browsers que não dão suporte ao gradiente
+       recupera o primeiro valor informado
+    */
+    background: nth($color-stops, 1);
+    background: -webkit-linear-gradient($direction, $color-stops);
+    background: -o-linear-gradient($direction, $color-stops);
+    background: -moz-linear-gradient($direction, $color-stops);
+    background: linear-gradient($direction, $color-stops);
+}
+@mixin image-linear-gradient($image, $direction, $color-stops...) {
+    /* para browsers que não dão suporte ao gradiente
+       recupera o primeiro valor informado
+    */
+    background: nth($color-stops, 1);
+    background-image: url($image), -webkit-linear-gradient($direction, $color-stops);
+    background-image: url($image), -o-linear-gradient($direction, $color-stops);
+    background-image: url($image), -moz-linear-gradient($direction, $color-stops);
+    background-image: url($image), linear-gradient($direction, $color-stops);
+}

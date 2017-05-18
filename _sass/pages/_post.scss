@@ -1,0 +1,29 @@
+.post{
+
+    .post-header{
+        min-height: 300px;
+        background : {
+            size:cover;
+            position:center;            
+        }
+        text-align: center;
+        position: relative;
+
+        .content{
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            padding-top: 40px;
+        }
+    }
+
+    .post-content{
+
+        max-width: 1000px;
+        margin: 0 auto;
+        padding:20px;
+
+    }
+
+}

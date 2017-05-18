@@ -18,7 +18,7 @@ Saudações,
 
 Neste post falarei, de forma simples, como venho utilizando a ferramenta de controle de versão, Git, abordando suas principais funcionalidades e mostrando como um programador pode (deve) estabelecer uma relação firme e duradoura com esta ferramenta que facilita tanto o nosso trabalho. Vamos lá!
 
-###Objetivos###
+<h5>Objetivos</h5>
 
 Ao fim deste post você deverá:
 
@@ -28,7 +28,7 @@ Ao fim deste post você deverá:
 
 > OBS: Não será abordado como criar um servidor Git.
 
-###O que é Git?###
+<h5>O que é Git?</h5>
 
 Basicamente, Git é uma ferramenta de controle de versão distribuída, além de um sistema de gerenciamento de código-fonte, desenvolvido por [Linus Torvalds][Linus], para auxiliar no desenvolvimento do Kernel Linux, mas acabou sendo adotado por muitos outros projetos.
 
@@ -36,11 +36,11 @@ Na prática, o Git trabalha com um sistema de repositórios, onde cada repositó
 
 Por ser um sistema distribuído, é possível criar repositórios em algum servidor e acessá-los remotamente, facilitando o trabalho de uma equipe geograficamente distribuída. Porém, é possível, também, trabalhar com repositórios apenas localmente.
 
-###Por que é importante?###
+<h5>Por que é importante?</h5>
 
 Bem, é fácil imaginarmos situações em que o Git pode facilitar nosso trabalho, por exemplo: quem nunca, ao desenvolver um projeto, precisou fazer um backup do código funcional para poder adicionar alguma funcionalidade, com medo que a alteração interferisse de forma negativa nas já desenvolvidas? Além disto, é possível, também, que ao desenvolver um projeto que só possui uma cópia, esta cópia se perca por vários motivos, o que não é um acontecimento raro de se ver. O Git possui funcionalidades que ajudam o desenvolvedor nestas e outras situações.
 
-###Glossário###
+<h5>Glossário</h5>
 
 Antes de nos aprofundarmos no assunto, é necessário ter em mente algumas expressões comumente utilizadas quando se trabalha com Git:
 
@@ -56,7 +56,7 @@ Antes de nos aprofundarmos no assunto, é necessário ter em mente algumas expre
 
 Com estes termos devidamente explicados, podemos continuar!
 
-###Instalação###
+<h5>Instalação</h5>
 
 A instalação do Git é bastante simples em todas as plataformas. Apenas clique na plataforma que esteja utilizando e será redirecionado para o link de instalação:
 
@@ -66,7 +66,7 @@ A instalação do Git é bastante simples em todas as plataformas. Apenas clique
 
 Usuário Linux, apenas rodem o comando correspondente a sua distribuição, e os demais (Windows e Mac), precisam apenas executar os arquivos baixados.
 
-###Criando um repositório remoto###
+<h5>Criando um repositório remoto</h5>
 
 Na criação de um repositório remoto, iremos utilizar os serviços oferecidos pelas duas ferramentas mais populares do seguimento: o [Bitbucket] e/ou o [GitHub].
 
@@ -92,7 +92,7 @@ No Bitbucket:
 
 Ao clicar na opção, preencha o formulário com as informações do seu repositório e ao confirmar, a criação do seu repositório remoto estará concluída!
 
-###Criando repositório local e mapeando para o remoto###
+<h5>Criando repositório local e mapeando para o remoto</h5>
 
 Existem duas formas de fazermos isto. A primeira, é mais simples e consiste em rodar o seguinte comando no terminal:
 
@@ -124,7 +124,7 @@ A versatilidade trazida por esta abordagem é que é possível atribuir um nome 
 
 Com o repositório devidamente mapeado, podemos começar a desenvolver nosso projeto e controlá-lo com o Git.
 
-###Trabalhando em equipe###
+<h5>Trabalhando em equipe</h5>
 
 Uma das maiores vantagens de se usar o Git é na hora de se trabalhar com uma equipe de desenvolvimento, e para se trabalhar em equipe, é necessário dar permissão para os demais membros acessarem e modificarem os arquivos do seu repositório. Os dois serviços utilizados oferecem um gerenciamento facilitado nesse quesito.
 
@@ -136,7 +136,7 @@ No Bitbucket, no seu repositório, clique na opção 'Settings' na barra vertica
 
 Ao adicionar sua equipe, todos estarão aptos a trabalhar utilizando os passos descritos a seguir.
 
-###Pull###
+<h5>Pull</h5>
 
 Ao se trabalhar em equipe, este passo é bastante importante!
 
@@ -148,7 +148,7 @@ Isso porque é possível que haja mudanças no repositório remoto feitas por ou
 
 > O Git não permitirá enviar modificações para o repositório remoto caso haja modificações não baixadas no seu repositório local.
 
-###Comitando modificações###
+<h5>Comitando modificações</h5>
 
 Ao modificar os arquivos do projeto, é necessário mapear as mudanças no Git. Fazemos isto através dos comites.
 
@@ -174,13 +174,13 @@ A mensagem que descreve o commit é necessária e serve para que posteriormente 
 
 > Não há uma regra para 'quando se deve realizar um commit', porém, o recomendado é que os seus commits contem uma 'história' sobre o desenvolvimento do projeto, sendo assim, é interessante que a cada tarefa concluída, um commit seja efetuado, fazendo com que seja fácil acompanhar a evolução do projeto.
 
-###Push###
+<h5>Push</h5>
 
 Com suas alterações mapeadas no repositório local, chegou a hora de torná-las disponíveis no repositório remoto, através do comando:
 
 	git push <nome do repositório (o nome padrão é 'origin')> <nome da branch (normalmente é a 'master')>
 
-##Conclusão##
+<h5>Conclusão</h5>
 
 Então, pessoal, esse post vai ficando por aqui. Ainda existem algumas funcionalidades interessantes do Git que não foram abordadas (tagging e branches), mas prometo abordá-las em uma futura continuação.
 

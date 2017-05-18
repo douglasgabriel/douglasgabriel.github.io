@@ -23,8 +23,8 @@ Neste post falarei de forma simples como criar um Blog hospedado no [GitHub][git
 > O Jekyll é uma ferramenta escrita em Ruby por [Tom Preston-Werner][tomPreston], um dos co-fundadores do GitHub, e tem a intenção de oferecer simplicidade e praticidade na criação de blogs de conteúdo estático.
 
 
-### Reservando o endereço do seu Blog ###
----
+<h5> Reservando o endereço do seu Blog </h5>
+
 Bem, para começar, uma conta no GitHub se faz necessária. Uma vez que já possua, o próximo passo é criar um repositório, e aqui vai um detalhe importante:
 
 **O nome do repositório deverá ser composto da seguinte forma:**
@@ -32,8 +32,7 @@ Bem, para começar, uma conta no GitHub se faz necessária. Uma vez que já poss
 
 Desta forma, a etapa de reservar um endereço para o seu Blog foi concluída com sucesso.
 
-###Preparando sua máquina para trabalhar com Jekyll###
----
+<h5>Preparando sua máquina para trabalhar com Jekyll</h5>
 
 > Antes de seguirmos gostaria de avisar que os passos seguintes serão baseados na plataforma Windows
 
@@ -57,8 +56,7 @@ Desta forma, você já deverá estar apto a instalar o Jekyll na sua máquina ap
 
 Assim, concluímos a etapa de preparação da máquina, vamos para a próxima
 
-###Criando o Blog###
----
+<h5>Criando o Blog</h5>
 
 Agora serão necessárias mais algumas interações via linha de comando, porém será necessário mais atenção aos comandos, uma vez que você deverá usá-los constantemente durante a manutenção do seu blog:
 
@@ -78,8 +76,7 @@ Assim, as alterações irão ser encaminhadas para o seu repositório no GitHub 
 
 Teste! digite no seu navegador o nome do ser repositório!
 
-###Conclusão###
----
+<h5>Conclusão</h5>
 
 Isso é tudo, pessoal! Espero que o post tenha sido útil.
 

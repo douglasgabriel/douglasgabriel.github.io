@@ -13,3 +13,7 @@
 .no-margin{
     margin: 0px !important;
 }
+
+.dgg-background-mask{
+    @include linear-gradient(0deg, black, transparent);
+}

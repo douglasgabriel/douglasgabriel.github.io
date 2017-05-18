@@ -22,15 +22,15 @@ Esta máxima é ainda mais verdadeira para aqueles que desejam produzir conteúd
 
 Neste post pretendo falar sobre como é possível melhorar a integração dos seus sites com as redes sociais e com os mecanismos de busca da Google, apenas fornecendo informações aos mesmos através de meta tags html.
 
-###O que são Meta tags?###
+<h5>O que são Meta tags</h5>
 
 Basicamente, são tags HTML que são usadas como padrão para fornecer informações da página em que encontram-se, de forma facilitada, isto porque processos conhecidos como [*Web Crawlers*][web crawler], resposáveis por, entre outras coisas, indexar conteúdos na web, utilizados por exemplo pela Google, Facebook e Twitter, utilizam estas tags como fonte principal de dados sobre os conteúdos presentes na Web.
 
-###Utilizando###
+</h5>Utilizando</h5>
 
 Primeiramente, é preciso saber que existem muitas meta tags, sendo que cada serviço pode criar suas próprias, sendo assim, me aterei a falar àquelas que julgo principais.
 
-####Tags básicas####
+<h5>Tags básicas</h5>
 
 Com as tags básicas é possível prover informações sobre a página, como o autor, bem como dados sobre o conteúdo da mesma, fornecendo uma breve descrição (*description*) e, também, palavras-chave para o conteúdo (*keywords*):
 
@@ -46,7 +46,7 @@ Com as tags básicas é possível prover informações sobre a página, como o a
 
 > > Não quebre linha ao passar o valor de um atributo, pois o mesmo pode ser interpretado como erro e ser ignorado.
 
-####Facebook####
+<h5>Facebook</h5>
 
 O Facebook utiliza as meta tags para reconhecer o conteúdo das páginas que são compartilhadas e poder montar um post como o que vemos abaixo:
 
@@ -74,7 +74,7 @@ Com a API devidamente configurada (apenas seguindo o passo acima) podemos adicio
 
 Então, estas são as tags básicas para se usar para interagir com o Facebook, a lista completa de tags pode ser econtrada [aqui][og protocol].
 
-####Twitter####
+<h5>Twitter</h5>
 
 Outra rede social bastante utilizada para compartilhamento de conteúdos é o Twitter, e para que ele construa um *card* como o que vemos abaixo para a sua página, basta adicionar as seguintes tags:
 
@@ -88,7 +88,7 @@ Outra rede social bastante utilizada para compartilhamento de conteúdos é o Tw
 
 `<meta name="twitter:image:src" content="http://recursive.com.br//images/posts/social-meta-tags/cover.png"/>` (Semelhante a *image* do Facebook)
 
-###Conclusão###
+<h5>Conclusão</h5>
 
 Então pessoal, este *post* vai ficando por aqui, espero que tenha sido util para melhorar a interação de vossos sites com as mídias sociais. Qualquer dúvida ou sugestão, podem deixar nos comentários.
 

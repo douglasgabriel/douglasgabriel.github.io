@@ -1,46 +1,34 @@
-<!DOCTYPE html>
 <html>
 
-{% include head.html %}
+    {% include head.html %}
 
-<body>
+    <body>
+        
+        {% include header.html %}
 
-	<header class="post-header post" style="background-image:url('{{ page.image }}')">
-		<h1 class="post-title">{{ page.title }}</h1>
-		<p class="post-subtitle">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
-	</header>
-	<div class="post">
-	<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-	<!-- desenvolvedores-inicio -->
-	<ins class="adsbygoogle"
-	style="display:block"
-	data-ad-client="ca-pub-5408692415712463"
-	data-ad-slot="3012350431"
-	data-ad-format="auto"></ins>
-	<script>
-	(adsbygoogle = window.adsbygoogle || []).push({});
-	</script>
-	<article class="post-content z-depth-1">
-		{{ content }}
-	</article>
-	<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-	<!-- desenvolvedores-inicio -->
-	<ins class="adsbygoogle"
-	style="display:block"
-	data-ad-client="ca-pub-5408692415712463"
-	data-ad-slot="3012350431"
-	data-ad-format="auto"></ins>
-	<script>
-		(adsbygoogle = window.adsbygoogle || []).push({});
-	</script>
-</div>
+		<main class="post">            
 
-<script src="/js/jQuery-2.1.4.min.js"></script>
-<script src="/js/materialize.min.js"></script>
-<script>
-$(".button-collapse").sideNav();
-</script>
+			<div class="post-header dgg-align-chdr-center" style="background-image:url('{{ page.image }}')">
 
-</body>
+				<div class="content white-text dgg-background-mask">
+
+					<h1 class="post-title">{{ page.title }}</h1>
+					<p class="post-subtitle">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
+
+				</div>
+
+			</div>
+
+			<article class="post-content">
+				
+				{{ content }}
+
+			</article>
+
+		</main>
+
+		{% include footer.html %}
+
+    </body>
 
 </html>
